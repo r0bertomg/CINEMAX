@@ -1,0 +1,18 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Admin",
+      "sobrenome": "Sistema",
+      "cpf": "52998224725",
+      "email": "admin@cinemax.com",
+      "senha": "admin123",
+      "rua": "Av. Paulista, 1000",
+      "cep": "01310100",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "11999990000",
+      "perfil": "admin"
+    }
+  ]
+}

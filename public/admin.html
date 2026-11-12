@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Administração</title>
+</head>
+<body>
+    <h1>Administração de Usuários</h1>
+
+    <nav class="menu">
+        <a href="BemVindo.html">Início</a>
+        <a href="#" id="sair">Sair</a>
+    </nav>
+
+    <div id="msg" class="msg"></div>
+
+    <form class="busca" id="busca">
+        <input id="cpfBusca" placeholder="Buscar por CPF" inputmode="numeric">
+        <button type="submit">Buscar</button>
+        <button type="button" id="limpar">Limpar</button>
+    </form>
+
+    <div class="tabela-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th><th>CPF</th><th>Email</th><th>Telefone</th><th>Cidade/UF</th><th>Perfil</th><th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista"></tbody>
+        </table>
+    </div>
+
+    <dialog id="dlg">
+        <h1>Editar usuário</h1>
+        <div id="msgEdicao" class="msg"></div>
+        <form id="formEdicao">
+            <div id="camposEdicao" class="grade"></div>
+            <br>
+            <button type="button" id="cancelar">Cancelar</button>
+            <button type="submit">Salvar</button>
+        </form>
+    </dialog>
+
+    <script src="common.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
