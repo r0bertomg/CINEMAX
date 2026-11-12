@@ -62,15 +62,7 @@ function aplicarMascara(input, funcao) {
 }
 
 function cpfValido(cpf) {
-    const d = soDigitos(cpf);
-    if (d.length !== 11 || /^(\d)\1+$/.test(d)) return false;
-    for (let t = 9; t < 11; t++) {
-        let soma = 0;
-        for (let i = 0; i < t; i++) soma += Number(d[i]) * (t + 1 - i);
-        const digito = ((soma * 10) % 11) % 10;
-        if (digito !== Number(d[t])) return false;
-    }
-    return true;
+    return soDigitos(cpf).length === 11;
 }
 
 function camposHTML(prefixo) {
