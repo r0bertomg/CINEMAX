@@ -1,4 +1,4 @@
-const API = "http://localhost:3000/usuarios";
+const API = '/usuarios';
 
 const CAMPOS = [
     ["nome", "Nome", "text"],
